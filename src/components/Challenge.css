@@ -1,0 +1,215 @@
+
+.challenge-section {
+  min-height: 100vh;
+  padding: 100px 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.challenge-section h1,
+.challenge-section h2 {
+  color: #111;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.challenge-section h1::after,
+.challenge-section h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.challenge-section p,
+.challenge-section li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 18px;
+  color: #444;
+}
+
+
+.accurate-diagnosis-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.accurate-diagnosis {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.diagnosis-image img {
+  max-width: 450px;  
+  height: auto;
+  border-radius: 0; 
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease;
+}
+
+.diagnosis-image img:hover {
+  transform: scale(1.05);
+}
+
+.diagnosis-text {
+  flex: 1;
+}
+
+.diagnosis-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.diagnosis-text p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+
+.holistic-section {
+  padding: 60px 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.holistic-section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #111;
+  font-weight: 600;
+  position: relative;
+}
+
+.holistic-section h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.cards-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  z-index: 1;
+}
+
+
+.cards-container::before,
+.cards-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(120px);
+  opacity: 0.3;
+}
+
+.cards-container::before {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #f9f9f9, transparent 70%);
+  top: -50px;
+  left: -80px;
+}
+
+.cards-container::after {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, #e0f7fa, transparent 70%);
+  bottom: -60px;
+  right: -70px;
+}
+
+
+.card.challenge-card {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+  color: #333;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 260px;
+  transition: all 0.4s ease;
+  text-align: center;
+  background-image: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+  backdrop-filter: blur(4px);
+}
+
+.card.challenge-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card.challenge-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #007bff;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card.challenge-card p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .challenge-section {
+    padding: 60px 20px;
+  }
+
+  .accurate-diagnosis {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .diagnosis-image img {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .cards-container::before,
+  .cards-container::after {
+    display: none;
+  }
+
+  .holistic-section {
+    padding: 40px 20px;
+  }
+
+  .card.challenge-card {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
+
+

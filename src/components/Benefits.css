@@ -1,0 +1,142 @@
+.benefits-section {
+  width: 100%;
+  padding: 60px 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #111;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+
+.benefits-list-horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+  flex-wrap: wrap; 
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+}
+
+.benefit-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefit-img:hover {
+  transform: scale(1.05);
+}
+
+.benefit-text strong {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.benefit-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.alphie-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.alphie-image img {
+  width: 400px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.1);
+  transition: transform 0.35s ease;
+}
+
+.alphie-image img:hover {
+  transform: scale(1.03);
+}
+
+.alphie-text {
+  max-width: 500px;
+}
+
+.alphie-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.alphie-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .benefits-section {
+    padding: 40px 20px;
+  }
+
+  .benefit-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .benefits-list-horizontal {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .alphie-section {
+    flex-direction: column-reverse; 
+    text-align: center;
+    gap: 20px;
+  }
+
+  .alphie-text {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+

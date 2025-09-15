@@ -1,0 +1,174 @@
+/* General Section */
+.journey-section {
+  min-height: 100vh;
+  padding: 100px 40px;
+  text-align: center;
+  background: #fff;
+}
+
+/* Section Title */
+.section-title {
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin: 50px 0 30px;
+  background: linear-gradient(90deg, black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* Timeline Container */
+.timeline {
+  position: relative;
+  margin: 50px 0;
+  padding: 0;
+}
+
+/* Central vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: linear-gradient(to bottom, #007bff, #00c6ff);
+  transform: translateX(-50%);
+}
+
+/* Timeline steps */
+.timeline-step {
+  position: relative;
+  width: 45%;
+  padding: 20px 25px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  margin: 30px 0;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.timeline-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Steps on left/right side */
+.timeline-step.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-step.right {
+  left: 55%;
+  text-align: left;
+}
+
+/* Connector circles */
+.timeline-step::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  background: #007BFF;
+  border: 3px solid white;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0px 0px 8px rgba(0,123,255,0.5);
+}
+
+.timeline-step.left::before {
+  right: -13px;
+}
+
+.timeline-step.right::before {
+  left: -13px;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Multimodal Cards */
+.multimodal-info {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+
+.multi-card {
+  background-color: white;
+  border-radius: 14px;
+  padding: 25px 20px;
+  width: 230px;
+  text-align: center;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid transparent;
+}
+
+.multi-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0px 10px 18px rgba(0,0,0,0.15);
+  border-top: 4px solid #007bff;
+}
+
+.multi-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+/* Pipeline images inside timeline */
+.pipeline-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.pipeline-img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+  .timeline-step, .timeline-step.left, .timeline-step.right {
+    width: 90%;
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-step::before {
+    left: -13px;
+  }
+
+  .multimodal-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
