@@ -1,4 +1,3 @@
-
 .challenge-section {
   min-height: 100vh;
   padding: 100px 40px;
@@ -33,7 +32,6 @@
   margin: 0 auto 18px;
   color: #444;
 }
-
 
 .accurate-diagnosis-wrapper {
   display: flex;
@@ -78,7 +76,6 @@
   margin-bottom: 15px;
 }
 
-
 .holistic-section {
   padding: 60px 40px;
   background-color: #fff;
@@ -113,7 +110,6 @@
   z-index: 1;
 }
 
-
 .cards-container::before,
 .cards-container::after {
   content: "";
@@ -139,7 +135,6 @@
   bottom: -60px;
   right: -70px;
 }
-
 
 .card.challenge-card {
   position: relative;
@@ -181,6 +176,7 @@
   line-height: 1.6;
 }
 
+/* Tablet */
 @media (max-width: 768px) {
   .challenge-section {
     padding: 60px 20px;
@@ -210,6 +206,56 @@
     max-width: 350px;
   }
 }
+
+/* Phone */
+@media (max-width: 480px) {
+  .challenge-section {
+    padding: 40px 15px;
+  }
+
+  .challenge-section h1,
+  .challenge-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .challenge-section p,
+  .challenge-section li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .diagnosis-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .diagnosis-text p {
+    font-size: 0.9rem;
+  }
+
+  .diagnosis-image img {
+    max-width: 100%;
+  }
+
+  .holistic-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .card.challenge-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+
+  .card.challenge-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card.challenge-card p {
+    font-size: 0.9rem;
+  }
+}
+
 
 
 

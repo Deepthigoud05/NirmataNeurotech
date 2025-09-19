@@ -21,14 +21,12 @@
   letter-spacing: 1px;
 }
 
-
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 35px;
   width: 100%;
 }
-
 
 .card {
   background: #fff;
@@ -41,12 +39,10 @@
   text-align: center; 
 }
 
-
 .card:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 10px 24px rgba(0,0,0,0.18);
 }
-
 
 .card::before {
   content: "";
@@ -62,7 +58,6 @@
   width: 100%;
 }
 
-
 .card h2 {
   font-size: 1.6rem;
   color: #222;
@@ -70,14 +65,12 @@
   font-weight: 600;
 }
 
-
 .card p {
   font-size: 1.1rem;
   color: #555;
   line-height: 1.6;
   margin-bottom: 0;
 }
-
 
 .card img {
   width: 100%; 
@@ -93,21 +86,59 @@
   transform: scale(1.05);
 }
 
-
+/* ✅ Tablet (1024px and below) */
 @media (max-width: 1024px) {
+  .nextsteps-section {
+    padding: 50px 30px;
+  }
   .card img {
     max-width: 400px;
   }
 }
 
+/* ✅ Mobile (768px and below) */
 @media (max-width: 768px) {
+  .nextsteps-section {
+    padding: 40px 20px;
+  }
+  .nextsteps-section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
   .cards-container {
     grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .card {
+    padding: 20px 15px;
+  }
+  .card h2 {
+    font-size: 1.4rem;
+  }
+  .card p {
+    font-size: 1rem;
   }
   .card img {
     max-width: 100%;
   }
 }
+
+/* ✅ Small phones (480px and below) */
+@media (max-width: 480px) {
+  .nextsteps-section {
+    padding: 30px 15px;
+  }
+  .nextsteps-section-title {
+    font-size: 1.6rem;
+  }
+  .card h2 {
+    font-size: 1.2rem;
+  }
+  .card p {
+    font-size: 0.95rem;
+  }
+}
+
 
 
 

@@ -23,7 +23,6 @@
   border-radius: 2px;
 }
 
-
 .benefits-list-horizontal {
   display: flex;
   justify-content: center;
@@ -67,7 +66,6 @@
   line-height: 1.6;
 }
 
-
 .alphie-section {
   display: flex;
   align-items: center;
@@ -106,6 +104,7 @@
   color: #555;
 }
 
+/* Tablet */
 @media (max-width: 768px) {
   .benefits-section {
     padding: 40px 20px;
@@ -131,6 +130,44 @@
     max-width: 100%;
   }
 }
+
+/* Phone */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .benefit-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .benefit-text strong {
+    font-size: 1.2rem;
+  }
+
+  .benefit-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .alphie-image img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .alphie-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .alphie-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
 
 
 

@@ -1,4 +1,3 @@
-/* General Section */
 .journey-section {
   min-height: 100vh;
   padding: 100px 40px;
@@ -6,7 +5,6 @@
   background: #fff;
 }
 
-/* Section Title */
 .section-title {
   font-weight: bold;
   font-size: 2.2rem;
@@ -17,14 +15,12 @@
   letter-spacing: 1px;
 }
 
-/* Timeline Container */
 .timeline {
   position: relative;
   margin: 50px 0;
   padding: 0;
 }
 
-/* Central vertical line */
 .timeline::before {
   content: '';
   position: absolute;
@@ -36,7 +32,6 @@
   transform: translateX(-50%);
 }
 
-/* Timeline steps */
 .timeline-step {
   position: relative;
   width: 45%;
@@ -54,7 +49,6 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* Steps on left/right side */
 .timeline-step.left {
   left: 0;
   text-align: right;
@@ -65,7 +59,6 @@
   text-align: left;
 }
 
-/* Connector circles */
 .timeline-step::before {
   content: '';
   position: absolute;
@@ -87,14 +80,12 @@
   left: -13px;
 }
 
-/* Floating animation */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-6px); }
   100% { transform: translateY(0px); }
 }
 
-/* Multimodal Cards */
 .multimodal-info {
   display: flex;
   justify-content: center;
@@ -126,7 +117,6 @@
   margin-bottom: 15px;
 }
 
-/* Pipeline images inside timeline */
 .pipeline-img {
   width: 120px;
   height: 120px;
@@ -141,23 +131,63 @@
   transform: scale(1.1);
 }
 
-/* Responsive Timeline */
+/* ✅ Tablet view (<=1024px) */
+@media (max-width: 1024px) {
+  .journey-section {
+    padding: 80px 30px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .timeline-step {
+    width: 48%;
+  }
+}
+
+/* ✅ Mobile view (<=768px) */
 @media (max-width: 768px) {
-  .timeline-step, .timeline-step.left, .timeline-step.right {
-    width: 90%;
+  .journey-section {
+    padding: 60px 20px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+  }
+  .timeline::before {
+    left: 15px; /* shift line to the left */
+  }
+  .timeline-step,
+  .timeline-step.left,
+  .timeline-step.right {
+    width: 100%;
     left: 0;
     text-align: left;
+    margin-left: 30px; /* so it doesn’t overlap line */
   }
-
   .timeline-step::before {
-    left: -13px;
+    left: -30px; /* align circle with line */
   }
-
   .multimodal-info {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 }
+
+/* ✅ Small phones (<=480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .timeline-step {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+  .multi-card {
+    width: 90%;
+  }
+}
+
 
 
 
