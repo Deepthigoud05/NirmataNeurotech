@@ -131,7 +131,7 @@
   transform: scale(1.1);
 }
 
-/* ✅ Tablet view (<=1024px) */
+
 @media (max-width: 1024px) {
   .journey-section {
     padding: 80px 30px;
@@ -144,7 +144,7 @@
   }
 }
 
-/* ✅ Mobile view (<=768px) */
+
 @media (max-width: 768px) {
   .journey-section {
     padding: 60px 20px;
@@ -154,7 +154,7 @@
     margin: 40px 0 20px;
   }
   .timeline::before {
-    left: 15px; /* shift line to the left */
+    left: 15px; 
   }
   .timeline-step,
   .timeline-step.left,
@@ -162,10 +162,10 @@
     width: 100%;
     left: 0;
     text-align: left;
-    margin-left: 30px; /* so it doesn’t overlap line */
+    margin-left: 30px; 
   }
   .timeline-step::before {
-    left: -30px; /* align circle with line */
+    left: -30px; 
   }
   .multimodal-info {
     flex-direction: column;
@@ -174,7 +174,7 @@
   }
 }
 
-/* ✅ Small phones (<=480px) */
+
 @media (max-width: 480px) {
   .section-title {
     font-size: 1.5rem;

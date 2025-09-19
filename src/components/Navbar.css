@@ -84,7 +84,7 @@
   width: 100%;
 }
 
-/* Tablet adjustments */
+
 @media (max-width: 768px) {
   .navbar {
     padding: 12px 20px;
@@ -97,13 +97,13 @@
   }
 }
 
-/* Mobile (hamburger menu) */
+
 @media (max-width: 480px) {
   .navbar {
     flex-wrap: wrap;
   }
 
-  /* hide nav by default */
+ 
   .navbar ul {
     flex-direction: column;
     gap: 12px;
@@ -114,12 +114,12 @@
     display: none;
   }
 
-  /* show when active */
+ 
   .navbar ul.active {
     display: flex;
   }
 
-  /* hamburger button */
+
   .menu-toggle {
     display: block;
     cursor: pointer;

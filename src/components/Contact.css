@@ -86,7 +86,7 @@
   box-shadow: 0 10px 20px rgba(0, 86, 179, 0.4);
 }
 
-/* Tablets */
+
 @media (max-width: 768px) {
   .contact-page h1 {
     font-size: 2rem;
@@ -101,7 +101,7 @@
   }
 }
 
-/* Phones */
+
 @media (max-width: 480px) {
   .contact-page {
     padding: 20px 15px;

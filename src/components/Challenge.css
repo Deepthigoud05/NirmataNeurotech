@@ -176,7 +176,7 @@
   line-height: 1.6;
 }
 
-/* Tablet */
+
 @media (max-width: 768px) {
   .challenge-section {
     padding: 60px 20px;
@@ -207,7 +207,7 @@
   }
 }
 
-/* Phone */
+
 @media (max-width: 480px) {
   .challenge-section {
     padding: 40px 15px;

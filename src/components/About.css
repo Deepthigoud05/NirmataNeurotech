@@ -137,7 +137,7 @@ body {
   color: black;
 }
 
-/* Tablet responsiveness */
+
 @media (max-width: 1024px) {
   .solution-content, .tech-security-content {
     flex-direction: column;
@@ -154,7 +154,7 @@ body {
   }
 }
 
-/* Small tablet responsiveness */
+
 @media (max-width: 768px) {
   .about-section h1 {
     font-size: 2.3rem;
@@ -169,7 +169,7 @@ body {
   }
 }
 
-/* Phone responsiveness */
+
 @media (max-width: 480px) {
   .about-section {
     padding: 40px 20px;

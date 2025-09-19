@@ -104,7 +104,7 @@
   }
 }
 
-/* Tablets */
+
 @media (max-width: 768px) {
   .home-header {
     flex-direction: column;
@@ -130,7 +130,7 @@
   }
 }
 
-/* Phones */
+
 @media (max-width: 480px) {
   .home-header {
     padding: 40px 5%;

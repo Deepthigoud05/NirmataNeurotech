@@ -86,7 +86,7 @@
   transform: scale(1.05);
 }
 
-/* ✅ Tablet (1024px and below) */
+
 @media (max-width: 1024px) {
   .nextsteps-section {
     padding: 50px 30px;
@@ -96,7 +96,7 @@
   }
 }
 
-/* ✅ Mobile (768px and below) */
+
 @media (max-width: 768px) {
   .nextsteps-section {
     padding: 40px 20px;
@@ -123,7 +123,7 @@
   }
 }
 
-/* ✅ Small phones (480px and below) */
+
 @media (max-width: 480px) {
   .nextsteps-section {
     padding: 30px 15px;
